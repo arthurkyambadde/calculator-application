@@ -17,17 +17,25 @@ body {
   width: 400px;
   height: 500px;
   background-color: aqua;
-  border: 5px solid black;
+  background-image: radial-gradient(rgb(131, 159, 156), rgb(145, 145, 200));
+  /* border: 5px solid black; */
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px #888888;
 }
 
 .typing-space {
+  font-family: sans-serif;
+  color: #f6f8fe;
   height: 20%;
-  border: 2px solid black;
+  padding: 10px;
+  border: 2px solid #f6f8fe;
   margin-bottom: 20px;
-  background-color: antiquewhite;
+  background-color: #484d5f;
+  border-radius: 8px;
 }
 
 .previous-calculation {
+  background-color: ;
   height: 50%;
   font-size: 20px;
   font-weight: 800;
@@ -51,20 +59,38 @@ body {
 
 span {
   display: inline-block;
-  width: 22%;
-
-  background-color: grey;
+  width: 50%;
+  font-weight: 900;
+  color: #282a31;
+  background-color: rgb(202, 202, 202);
   margin-bottom: 20px;
-  border: 2px solid black;
+  /* border: 2px solid #f6f8fe; */
   overflow: hidden;
 
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 span:hover {
   background-color: rgb(126, 216, 216);
   transform: scale(1.1);
+}
+
+.green {
+  color: white;
+  background-color: #494b53;
+  font-weight: 800;
+}
+
+.equal {
+  color: white;
+  background-color: #72b872;
+}
+
+.clear {
+  background-color: #ffb733;
+  color: #f6f8fe;
 }
